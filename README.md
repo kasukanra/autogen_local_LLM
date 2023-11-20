@@ -25,6 +25,60 @@ https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF
 https://huggingface.co/TheBloke/llava-v1.5-13B-GPTQ
 ```
 
+### Setting up the environment
+```
+sudo apt update
+curl https://pyenv.run | bash
+```
+
+Configure environment variables in ~/.bashrc or ~/.zshrc
+```
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+```
+
+Restart shell
+```
+source ~/.bashrc  # or ~/.zshrc
+```
+
+Install python version
+```
+pyenv install 3.11.4
+```
+
+Clone this repository
+```
+git clone https://github.com/kudou-reira/autogen_local_LLM.git
+```
+
+Go into this repository:
+```
+cd autogen_local_LLM  
+```
+
+Set local python version:
+```
+pyenv local 3.11.4
+```
+
+Create virtual environment:
+```
+python -m venv venv
+```
+
+Activate virtual environment:
+```
+source venv/bin/activate
+```
+
+You can also use the `activate_venv.sh` I included as well:
+```
+. activate_venv.sh
+```
+
+
 ### How to use
 There are two different entrypoints you can hook into.
 
