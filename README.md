@@ -80,7 +80,6 @@ You can also use the `activate_venv.sh` I included as well:
 . activate_venv.sh
 ```
 
-
 ### How to use
 There are two different entrypoints you can hook into.
 
@@ -97,7 +96,12 @@ The second entrypoint is for people that already have an upscaled image dataset.
 ```
 
 ### Environment Variables Setup
-In the `.env`, you must properly set up the API endpoints for your multimodal chat + vision model and your text instruct model.
+In the `.env`, you must properly set up the API endpoints for your multimodal chat + vision model and your text instruct model. If you don't know how, it's best to watch the YouTube video I made.
+
+#### Getting the IP address within Linux
+```
+cat /etc/resolv.conf | grep nameserver
+```
 
 ### OAI_CONFIG_LIST.json
 You must add your OpenAI API key if you want to use Autogen. This is where you choose your model as well. Currently, only OpenAI API supports function calls. I hope this will change soon.
@@ -121,7 +125,6 @@ python server.py --model C:\home\text-generation-webui\models\llava-v1.5-13B-GPT
 ```
 ./server -t 4 -c 4096 -ngl 50 -m models/llava/ggml-model-q4_k.gguf --host 0.0.0.0 --port 8081 --mmproj models/llava/mmproj-model-f16.gguf
 ```
-
 
 
 ### Miscellaneous
