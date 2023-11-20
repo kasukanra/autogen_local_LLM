@@ -1,0 +1,12 @@
+selenium==3.141.0
+beautifulsoup4==4.10.0
+requests==2.26.0
+pillow
+pyautogen
+opencv_python
+python-dotenv
+replicate
+face_recognition
+torch
+torchvision
+git+https://github.com/akisatok/pySaliencyMap.git
