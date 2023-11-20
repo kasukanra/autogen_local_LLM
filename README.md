@@ -1,6 +1,8 @@
 # Autogen and Local LLMs
 
 This is a repository featured in the YouTube video here:
+[![Kasucast #20 - Autogen/AI Agents & Local LLMs autonomously create realistic Stable Diffusion model](https://img.youtube.com/vi/jUUk4RQpiK4/maxresdefault.jpg
+)](https://youtu.be/jUUk4RQpiK4)
 
 ## Overview
 The objective of this project is to autonomously fetch images from Pinterest, then use a combination of local large language models to describe images and prepare corresponding captions. The resulting tagged dataset will be used to train an SDXL model.
